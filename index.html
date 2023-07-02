@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- link bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/CSS/styles.css" />
+  </head>
+  <body>
+    <header><h1 class="text-center">Weather Dashboard</h1></header>
+    <main class="mainContainer row">
+      <aside class="col-md-3 text-center">
+        <form id="userCity">
+          <label for="text-input"><h2>Search for a City:</h2></label>
+          <br />
+          <input
+            type="text"
+            id="text-input"
+            name="user-text"
+            placeholder="City"
+          />
+          <br />
+          <input id="searchButton" type="submit" value="Search" />
+        </form>
+
+        <hr />
+        <div id="previousSearches"></div>
+      </aside>
+      <img
+        class="col-6"
+        id="swirlingGlobe"
+        src="https://media.tenor.com/9LT8KgpaYtcAAAAM/spin.gif"
+        alt="swirling globe"
+      />
+      <div id="mainContainer" class="col-md-8">
+        <section class="d-flex flex-column">
+          <div class="weatherCard currentWeather">
+            <div id="currentWeather" class="d-flex flex-row align-items-center">
+              <h2 id="cityName">city name</h2>
+              <h2 id="day0Date"></h2>
+              <img id="day0Icon" src="" alt="icon" />
+            </div>
+            <p id="day0Temp">temp</p>
+            <p id="day0Wind">wind</p>
+            <p id="day0Humidity">humidity</p>
+          </div>
+
+          <div id="forecast" class="d-flex flex-column">
+            <h3>5-Day Forecast:</h3>
+            <div
+              id="forecast-cards"
+              class="d-flex flex-row justify-content-between"
+            >
+              <div class="weatherCard">
+                <h4 id="day1Date">day1</h4>
+                <img id="day1Icon" src="" alt="icon" />
+                <p id="day1Temp">temp</p>
+                <p id="day1Wind">wind</p>
+                <p id="day1Humidity">humidity</p>
+              </div>
+
+              <div class="weatherCard">
+                <h4 id="day2Date">day2</h4>
+                <img id="day2Icon" src="" alt="icon" />
+                <p id="day2Temp">temp</p>
+                <p id="day2Wind">wind</p>
+                <p id="day2Humidity">humidity</p>
+              </div>
+
+              <div class="weatherCard">
+                <h4 id="day3Date">day3</h4>
+                <img id="day3Icon" src="" alt="icon" />
+                <p id="day3Temp">temp</p>
+                <p id="day3Wind">wind</p>
+                <p id="day3Humidity">humidity</p>
+              </div>
+
+              <div class="weatherCard">
+                <h4 id="day4Date">day4</h4>
+                <img id="day4Icon" src="" alt="icon" />
+                <p id="day4Temp">temp</p>
+                <p id="day4Wind">wind</p>
+                <p id="day4Humidity">humidity</p>
+              </div>
+
+              <div class="weatherCard">
+                <h4 id="day5Date">day5</h4>
+                <img id="day5Icon" src="" alt="icon" />
+                <p id="day5Temp">temp</p>
+                <p id="day5Wind">wind</p>
+                <p id="day5Humidity">humidity</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div
+      class="alert alert-danger d-flex align-items-center"
+      id="past"
+      role="alert"
+    >
+      <div>Please type in a valid city</div>
+    </div>
+
+    <!-- link jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- link dayjs -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- link for advanced fromat plugin on dayjs -->
+    <script src="https://unpkg.com/dayjs@1.11.3/plugin/advancedFormat.js"></script>
+
+    <script src="./assets/JavaScript/script.js"></script>
+  </body>
+</html>
