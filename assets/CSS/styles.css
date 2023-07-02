@@ -1,0 +1,57 @@
+header {
+  color: white;
+  background: linear-gradient(
+    to right,
+    rgb(51, 90, 174) 0%,
+    rgb(73, 1, 160) 100%
+  );
+  padding: 5px 0;
+}
+
+.currentWeather {
+  border: 2px solid grey;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+#forecast-cards > div {
+  background-color: rgb(59, 76, 92);
+  color: white;
+  min-width: 200px;
+  padding: 5px;
+}
+
+label {
+  width: 100%;
+}
+
+input,
+.button {
+  width: 95%;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+#searchButton {
+  background-color: rgb(95, 116, 223);
+  color: white;
+}
+
+.alert {
+  position: fixed;
+  width: 80%;
+  left: 10%;
+  height: 20%;
+  top: 40%;
+  justify-content: center;
+  visibility: hidden;
+}
+
+#mainContainer {
+  display: none;
+}
+
+.button {
+  background-color: rgb(82, 83, 84);
+  color: white;
+}
