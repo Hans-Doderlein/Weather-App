@@ -12,6 +12,9 @@ header {
   border: 2px solid grey;
   margin: 10px 0;
   padding: 5px;
+  font-weight: bold;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #forecast-cards > div {
@@ -26,11 +29,17 @@ label {
 }
 
 input,
-.button {
+.button,
+#clearSearches {
   width: 95%;
   margin-bottom: 20px;
   padding: 5px;
   border-radius: 5px;
+}
+
+#clearSearches {
+  background-color: red;
+  color: white;
 }
 #searchButton {
   background-color: rgb(95, 116, 223);
@@ -54,4 +63,8 @@ input,
 .button {
   background-color: rgb(82, 83, 84);
   color: white;
+}
+
+.button:hover {
+  background-color: rgb(95, 116, 223);
 }
