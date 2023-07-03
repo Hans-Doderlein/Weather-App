@@ -1,4 +1,6 @@
 function displayWeather(weatherObject) {
+  // displays the city name in the main container
+
   $("#cityName").text(weatherObject.city.name);
 
   let dayIndex = 0;
@@ -9,6 +11,8 @@ function displayWeather(weatherObject) {
 
   displayBackground(dayWeather);
 
+  // dynamically updates the weather info for all cards
+
   for (let idIndex = 0; idIndex <= 5; idIndex++) {
     const {
       dt_txt,
@@ -16,6 +20,8 @@ function displayWeather(weatherObject) {
       wind: { speed },
       weather: [{ icon }],
     } = weatherObject.list[dayIndex];
+
+    // formats date
 
     let today = dayjs(dt_txt).format("(M/DD/YYYY)");
     $(`#day${idIndex}Date`).html(`&nbsp;${today}`);
@@ -29,6 +35,9 @@ function displayWeather(weatherObject) {
     $(`#day${idIndex}Wind`).text(`Wind: ${speed} MPH`);
 
     $(`#day${idIndex}Humidity`).text(`Humidity: ${humidity} %`);
+
+    // correctly changed dayIndex based on current loop
+
     if (idIndex == 4) {
       dayIndex += 7;
     } else {

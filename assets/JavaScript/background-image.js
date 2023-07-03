@@ -1,4 +1,6 @@
 function displayBackground(dayWeather) {
+  // changes image of current day depending on weather
+
   if (dayWeather == "Clear") {
     let clearGIF =
       "background-image: url(https://media3.giphy.com/media/o7R0zQ62m8Nk4/giphy.gif?cid=ecf05e47m15flms5yjuhz47h6wmxvhw89gebmeacpgm0gqx8&ep=v1_gifs_search&rid=giphy.gif&ct=g); color: yellow";

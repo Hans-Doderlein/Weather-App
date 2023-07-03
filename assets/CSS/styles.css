@@ -1,3 +1,5 @@
+/* stylization of header */
+
 header {
   color: white;
   background: linear-gradient(
@@ -8,6 +10,7 @@ header {
   padding: 5px 0;
 }
 
+/* stylization of current weather box */
 .currentWeather {
   border: 2px solid grey;
   margin: 10px 0;
@@ -17,6 +20,8 @@ header {
   background-repeat: no-repeat;
 }
 
+/* formatting of forecast card info */
+
 #forecast-cards > div {
   background-color: rgb(59, 76, 92);
   color: white;
@@ -25,9 +30,13 @@ header {
   margin-top: 8px;
 }
 
+/* adjusting width of labels */
+
 label {
   width: 100%;
 }
+
+/* stylize inputs and clear button */
 
 input,
 .button,
@@ -38,14 +47,21 @@ input,
   border-radius: 5px;
 }
 
+/* clear button is red */
+
 #clearSearches {
   background-color: red;
   color: white;
 }
+
+/* searh button is blueish */
+
 #searchButton {
   background-color: rgb(95, 116, 223);
   color: white;
 }
+
+/* stylization for alert message */
 
 .alert {
   position: fixed;
@@ -57,14 +73,20 @@ input,
   visibility: hidden;
 }
 
+/* hide container until needed */
+
 #mainContainer {
   display: none;
 }
+
+/* previous search buttons styled */
 
 .button {
   background-color: rgb(82, 83, 84);
   color: white;
 }
+
+/* hover affect on previous search buttons */
 
 .button:hover {
   background-color: rgb(95, 116, 223);
