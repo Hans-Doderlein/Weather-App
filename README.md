@@ -2,7 +2,9 @@
 
 ## Link ->
 
-## Screenshot
+## Screenshot ->
+![image](https://github.com/Hans-Doderlein/Weather-App/assets/132940852/6a68ce30-47ec-4855-918b-978224db15c6)
+
 
 ## Description
 
