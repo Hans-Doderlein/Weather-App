@@ -9,7 +9,7 @@ function displayWeather(weatherObject) {
 
   displayBackground(dayWeather);
 
-  for (let idIndex = 0; idIndex < 6; idIndex++) {
+  for (let idIndex = 0; idIndex <= 5; idIndex++) {
     const {
       dt_txt,
       main: { temp, humidity },
@@ -29,7 +29,10 @@ function displayWeather(weatherObject) {
     $(`#day${idIndex}Wind`).text(`Wind: ${speed} MPH`);
 
     $(`#day${idIndex}Humidity`).text(`Humidity: ${humidity} %`);
-
-    dayIndex += 7;
+    if (idIndex == 4) {
+      dayIndex += 7;
+    } else {
+      dayIndex += 8;
+    }
   }
 }
