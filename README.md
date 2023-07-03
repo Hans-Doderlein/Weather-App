@@ -3,7 +3,7 @@
 ## Link ->
 
 ## Screenshot ->
-![image](https://github.com/Hans-Doderlein/Weather-App/assets/132940852/ed7549e4-9462-49df-bef9-d5f760122e5c)
+![image](https://github.com/Hans-Doderlein/Weather-App/assets/132940852/99af8144-b9b3-4f85-bb69-6156b87d5636)
 
 
 
